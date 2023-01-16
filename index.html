@@ -1,0 +1,448 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Linked In</title>
+    <link rel="stylesheet" href="LinkedIn.css" />
+    <!-- Render All Elements -->
+    <link rel="stylesheet" href="normalize.css" />
+    <!--font awesome Library-->
+    <link rel="stylesheet" href="./all.min.css" />
+    <!--google fonts-->
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Work+Sans:wght@200;300;400;500&display=swap"
+      rel="stylesheet"
+    />
+    <script src="https://kit.fontawesome.com/fc209ff6b1.js" crossorigin="anonymous"></script>
+
+    <link rel="shortcut icon" href="./R.png" type="image/x-icon" />
+    
+  </head>
+  <body>
+    <header id="header">
+      <div class="navBar">
+        <div class="nav-left">
+          <div>
+            <a href="index.html">
+              <img
+                src="./R.png"
+                style=""
+              />
+            </a>
+          </div>
+          <div class="nav-search">
+            
+            <i class="fa-solid fa-magnifying-glass" style="" ></i>
+            <div id="input-hover">
+              <input
+                type="text"
+                name="text"
+                id="searchBar"
+                placeholder=" Search here!"
+                style="border-color: aliceblue"
+              />
+            </div>
+            
+          </div>
+        </div>
+        <div class="middle-nav">
+          <div class="nav-items">
+            <div class="nav-item">
+              <a href="#"  class="hover"
+                ><i  class="fa-solid fa-house-chimney fa-2x"  style="color: rgb(14, 8, 8)"></i>
+                <div><span>Home</span></div>
+              </a>
+            </div>
+            <div class="nav-item">
+              <a href="#" >
+                <i class="fa-solid fa-user-group fa-2x"  ></i>
+                <div><span>My Network</span></div></a>
+            </div>
+            <div class="nav-item" class="hover">
+              <a href="#"  >
+                <i  class="fa-solid fa-briefcase fa-2x" style="" class="hover"></i>
+                <div><span>Jobs</span></div></a
+              >
+            </div>
+            <div class="nav-item">
+              <a href="#" 
+                ><i 
+                  class="fa-solid fa-comment-dots fa-2x"
+                  style="" class="hover"
+                ></i>
+                <div><span>Messaging</span></div></a
+              >
+            </div>
+            
+            <div class="nav-item">
+              <a href="#"
+                ><i  class="fa-solid fa-bell fa-2x" style="" class="hover"></i>
+            <div> <span>Notifications</span></div>
+              </a >
+            </div>
+            
+            <div id="list-menu" onmouseclick="">
+              <div class="profile-menu">
+                <div class="user-info">
+                  <img src="./myphoto.jpg" class="pro-icon" />
+                  <div>
+                    <h4 style="margin-bottom:-3px;margin-right:7px;">Moustafa Abdelhady</h4>
+                    <a href="profile.html" style="color:#5f96f0;">Frontend Developer</a>
+                  </div>
+                </div>
+                <a href="#" class="menu-link" style="">
+                  <p class="veiw-profile" style="width:10rem;margin-left:7px;margin-top:7px;">Veiw Profile</p>
+                <span></span>
+                </a>
+                <hr style="margin-top:5%;" >
+                <a href="#" class="menu-link" style="color:black;">
+                  <h4 style="margin-top:3%;">Account</h4>
+                  <p style="font-weight:2rem;margin-top:3%;">Try Premium for free</p>
+                  <p style="font-weight:2rem;margin-top:3%;">Sittings & Privacy</p>
+                  <p style="font-weight:2rem;margin-top:3%;">Help</p>
+                  <p style="font-weight:2rem;margin-top:3%;">Language</p>
+                <span></span>
+                
+                </a>
+                <hr style="margin-top:5%;">
+                <a href="#" class="menu-link" style="color:black;">
+                  <h4 style="margin-top:3%;">Manage</h4>
+                  <p style="font-weight:2rem;margin-top:3%;">Posts & activity</p>
+                  <p style="font-weight:2rem;margin-top:3%;">Job posting Account</p>
+                </a>
+                <hr style="margin-top:5%;">
+                <a href="#" class="menu-link" style="color:black;">
+                  <h5 style="font-weight:2rem;margin-top:3%;">Sign Out</h5>
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="nav-icon" onclick="toggleMenu()" >
+          <img src="./myphoto.jpg" class="user-icon" />
+        </div>
+        <div class="line"></div>
+        <div class="grid" ><i class="fa-solid fa-grip-vertical fa-2x" style="height: 30%;" onclick="nightMood()"></i><i class="fa-solid fa-grip-vertical fa-2x " style="width:23px;"></i></div>
+      </div>
+    </header>
+    <!-------------------------------------------------->
+    <div class="container">
+      <!-- ---------- left side---------->
+      <div class="left-side">
+          <div class="profile-veiw">
+            <div><img src="./rrr.jpg" style="" class="cover-img"></div>
+            <div class="my-profile">
+              <img src="./myphoto.jpg">
+              <h4 style=" ">Moustafa Abdelhady</h4>
+              <h5 style="">Frontend Develober</h5>
+              <hr style="margin:1rem 0;">
+              <ul>
+                <li>Connections <span style="font-weight: bold; ">35</span></li>
+                <li style="color:#222">Grow your network<span style="font-weight: bold; "> ^ </span></li>
+                <li>Who's veiwed your profile <span style="font-weight: bold; ">10</span></li>
+              </ul>
+            </div>
+          
+            <div class="freetry-link">
+              <hr style="margin:1rem 0;">
+              <p style="font-weight:100%;color:#777;">Access exclusive tools & insight</p>
+              <i class="fa-solid fa-money-check-dollar"></i><span style="margin-left:5px;">Try premium for free</span>
+            </div>
+            <div class="myItems">
+              <hr style="margin-bottom:1rem ;">
+              <i class="fa-solid fa-bookmark"></i><span style="">My items</span>
+            </div>
+          </div>
+          <div class="activity-box">
+              <h3>Groups</h3>
+              <a href="#" >
+                <i class="fa-solid fa-user-group"></i><span>ITI informaion technology</span>
+              </a>
+              <a href="#" >
+                <i class="fa-solid fa-user-group"></i><span>Web developer</span>
+              </a>
+              <a href="#" >
+                <i class="fa-solid fa-user-group"></i><span>Elzero web school</span>
+              </a>
+              
+                <h3>Events<span class="events"><i class="fa-solid fa-plus" ></i></span></h3>
+                <a href="#" >
+                  <i class="fa-solid fa-calendar-days"></i><span>Web Zone</span>
+                </a>
+                <a href="#" >
+                  <i class="fa-solid fa-calendar-days"></i><span>Web roadmap</span>
+                </a>
+                <a href="#" >
+                  <i class="fa-solid fa-calendar-days"></i><span>Presentation Skils</span>
+                </a>
+
+                <h3>Hashtags</h3>
+              <a href="#" >
+                <i class="fa-solid fa-hashtag"></i><span>Programming</span>
+              </a>
+              <a href="#" >
+                <i class="fa-solid fa-hashtag"></i><span>Developers</span>
+              </a>
+              <a href="#" >
+                <i class="fa-solid fa-hashtag"></i><span>How to study</span>
+              </a>
+              <hr style="margin:1rem 0;">
+              <a href="#" style="margin:0 25%;"><span>Discover more</span></a>
+          </div>
+        
+      </div>
+      <!---------middle-side-------------->
+      <div class="middle-side">
+        <div class="start-post">
+          <div class="post-input">
+            <img src="./myphoto.jpg" class="post-icon"/>
+            <input type="text" placeholder="Start a post" id="text-area" ></input>
+          </div>
+          <div class="post-links">
+            <ul>
+            <li><i class="fa-regular fa-image "  style="color:rgb(76, 142, 204)"></i><span>Photo</span></li>
+            <li><i class="fa-brands fa-youtube" style="color:rgb(54, 133, 54)"></i><span>Video</span></li>
+            <li><i class="fa-solid fa-calendar-days" style="color:orange"></i><span>Events</span></li>
+            <li><i class="fa-solid fa-receipt" style="color:rgb(227, 230, 88)"></i><span>Write article</span></li>
+          </ul>
+          </div>
+        </div>
+        <div class="sortby">
+          <hr>
+          <p>Sort by:<span>Top</span></p>
+        </div>
+        <div class="post-posts">
+          <div class="post-card">
+            <div class="load">
+            <img src="./R.png" alt="">
+            <div>
+              <h4>Linkedin</h4>
+              <p>Technology, Information and Internet</p>
+              <p>24,153,728 followers</p>
+            </div>
+          </div>
+          <i class="fa-solid fa-ellipsis"></i>
+          </div>
+          <p>The success of every websites depends on search engine optimisation and digital marketing
+            strategy.If you are on first page of all major search engines
+            then you are ahead among your competitors.</p>
+          <img src="./1659648030107.jfif" alt="" style="margin:1rem 0;width:100%">
+          <div class="post-emotions">
+            <div>
+              <img src="./like.png" alt="">
+              <img src="./kind.png" alt="">
+              <img src="./love.jfif" alt="">
+              <img src="./funny.png" alt="">
+              <span class="liked-rate">Moustafa Abdelhady and 2,200 others</span>
+            </div>
+            <div>
+              <span>800 Comments . 200 Reposts</span>
+            </div>
+          </div>
+          <div class="post-react">
+            <div class="post-react-btn">
+              <i class="fa-regular fa-thumbs-up"></i>
+              <span>Like</span>
+            </div>
+            <div class="post-react-btn">
+              <i class="fa-regular fa-comment"></i>
+              <span>Comment</span>
+            </div>
+            <div class="post-react-btn">
+              <i class="fa-solid fa-repeat"></i>
+              <span>Repost</span>
+            </div>
+            <div class="post-react-btn">
+              <i class="fa-regular fa-paper-plane"></i>
+              <span>Send</span>
+            </div>
+          </div>
+        </div>
+        <div class="post-posts">
+          <div class="post-card">
+            <div class="load">
+            <img src="./thunder.jpg" alt="">
+            <div>
+              <h4>Bassam Mohammed</h4>
+              <p>Web Developer</p>
+              <p>8,000 followers</p>
+            </div>
+          </div>
+          <i class="fa-solid fa-ellipsis"></i>
+          </div>
+          <div>
+            <img src="./funny.png" class="funny"style="" >
+            <img src="./funny.png" class="funny"style="" > 
+          </div>
+          <img src="./1671373908013.jfif" alt="" style="margin:1rem 0;width:100%">
+          <div class="post-emotions">
+            <div>
+              <img src="./like.png" alt="">
+              <img src="./kind.png" alt="">
+              <img src="./love.jfif" alt="">
+              <img src="./funny.png" alt="">
+              <span class="liked-rate">Moustafa Abdelhady and 2,200 others</span>
+            </div>
+            <div>
+              <span>800 Comments . 200 Reposts</span>
+            </div>
+          </div>
+          <div class="post-react">
+            <div class="post-react-btn">
+              <i class="fa-regular fa-thumbs-up"></i>
+              <span>Like</span>
+            </div>
+            <div class="post-react-btn">
+              <i class="fa-regular fa-comment"></i>
+              <span>Comment</span>
+            </div>
+            <div class="post-react-btn">
+              <i class="fa-solid fa-repeat"></i>
+              <span>Repost</span>
+            </div>
+            <div class="post-react-btn">
+              <i class="fa-regular fa-paper-plane"></i>
+              <span>Send</span>
+            </div>
+          </div>
+        </div>
+        <div class="post-posts">
+          <div class="post-card">
+            <div class="load">
+            <img src="./rrr.jpg" alt="">
+            <div>
+              <h4>Nagi Atallah</h4>
+              <p>Fullstack Developer</p>
+              <p>6,000 followers</p>
+            </div>
+          </div>
+          <i class="fa-solid fa-ellipsis"></i>
+          </div>
+          
+          <img src="./1671514376754.jfif" alt="" style="margin:1rem 0;width:100%">
+          <div class="post-emotions">
+            <div>
+              <img src="./like.png" alt="">
+              <img src="./kind.png" alt="">
+              <img src="./love.jfif" alt="">
+              <img src="./funny.png" alt="">
+              <span class="liked-rate">Moustafa Abdelhady and 2,200 others</span>
+            </div>
+            <div>
+              <span>800 Comments . 200 Reposts</span>
+            </div>
+          </div>
+          <div class="post-react">
+            <div class="post-react-btn">
+              <i class="fa-regular fa-thumbs-up"></i>
+              <span>Like</span>
+            </div>
+            <div class="post-react-btn">
+              <i class="fa-regular fa-comment"></i>
+              <span>Comment</span>
+            </div>
+            <div class="post-react-btn">
+              <i class="fa-solid fa-repeat"></i>
+              <span>Repost</span>
+            </div>
+            <div class="post-react-btn">
+              <i class="fa-regular fa-paper-plane"></i>
+              <span>Send</span>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!----------right-side------------->
+      <div class="right-side">
+        <div class="add-feed">
+          <span style="clear:both"></span>
+          <h5>Add to your feed<span class="events"><i class="fa-solid fa-address-book"></i></span></h5>
+          <div class="follow-box">
+            <div><img src="./IMG_0089.JPG" class="follow-icon"/></div>
+            <div>
+              <h5>Loca Modric (Backend)</h5>
+              <p>Web Designer</p>
+              <div class="follow-button">
+                <button class="btn"><i class="fa-solid fa-plus" ></i>Follow</button>
+              </div>
+            </div>
+          </div>
+       
+        <div class="follow-box">
+          <div><img src="./dona.jpg" class="follow-icon"/></div>
+          <div>
+            <h5>Mustafa Ali (Frontend)</h5>
+            <p>Web Designer</p>
+            <div class="follow-button">
+              <button class="btn"><i class="fa-solid fa-plus" ></i>Follow</button>
+            </div>
+          </div>
+        </div>
+       
+        <div class="follow-box">
+          <div><img src="./Bassam.jpg" class="follow-icon"/></div>
+          <div>
+            <h5>Bassam Ali (Full stack)</h5>
+            <p>Web Designer</p>
+            <div class="follow-button">
+              <button class="btn"><i class="fa-solid fa-plus" ></i>Follow</button>
+            </div>
+          </div>
+        </div>
+        <div class="recommend">Veiw all recommendtion<i class="fa-solid fa-right-long"></i>
+        </div>
+        
+        
+      </div>
+
+      <div class="sticky">
+        <div class="photo-bar">
+          <img src="./AAYQAgTPAAgAAQAAAAAAADVuOvKzTF-3RD6j-qFPqhubBQ.png" style="width:100% " alt="">
+        </div>
+        <div class="partners">
+          <a href="#">About</a>
+          <a href="#">Accessibility</a>
+          <a href="#">Help Center</a>
+          <a href="#">Privacy & Terms</a>
+          <a href="#">Ad Choice</a>
+          <a href="#">Advertising</a>
+          <a href="#">Business Services</a>
+          <a href="#">Get the Linkedin app</a>
+          <a href="#">More</a>
+          <div class="copyright">
+            <h4>Linked</h4><img src="./R.png" alt="">
+            <p> LinkedIn Corporation © 2022</p>
+          </div>
+        
+        </div>
+      </div>
+    </div>
+
+  </body>
+  <script>
+
+    function toggleMenu(){
+      document.getElementById("list-menu").classList.toggle("show");
+      // document.querySelector("active-box").style.zIndex="-1"; 
+    }
+
+
+
+      // darkMood Side => underTesting...
+
+  //   function nightMood(){
+  //       // var setTimeOut=setTimeout(function(){
+            
+  //          var darkMood= document.body.classList.toggle("dark-mood");
+        
+  //          var h3= document.querySelectorAll("h3");
+  //   for(let i=0 ;i<h3.length;i++){
+  //       h3[i].classList.toggle("orange")
+  //   }
+  // }
+    </script>
+</html>
